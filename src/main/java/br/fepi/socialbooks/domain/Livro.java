@@ -1,0 +1,73 @@
+package br.fepi.socialbooks.domain;
+
+import java.util.Date;
+import java.util.List;
+
+public class Livro {
+
+	private Long id;
+	private String nome;
+	private Date publicacao;
+	private String editora;
+	private String resumo;
+	private String autor;
+	private List<Comentario> comentarios;
+	
+	//**** Getter's and setter's ****
+	
+	//ID
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
+	//nome
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	//publicação
+	public Date getPublicacao() {
+		return publicacao;
+	}
+	public void setPublicacao(Date publicacao) {
+		this.publicacao = publicacao;
+	}
+	
+	//editora
+	public String getEditora() {
+		return editora;
+	}
+	public void setEditora(String editora) {
+		this.editora = editora;
+	}
+	
+	//resumo
+	public String getResumo() {
+		return resumo;
+	}
+	public void setResumo(String resumo) {
+		this.resumo = resumo;
+	}
+	
+	//autor
+	public String getAutor() {
+		return autor;
+	}
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+	
+	//comentários
+	public List<Comentario> getComentarios() {
+		return comentarios;
+	}
+	public void setComentarios(List<Comentario> comentarios) {
+		this.comentarios = comentarios;
+	}
+}
