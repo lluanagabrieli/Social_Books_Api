@@ -13,8 +13,12 @@ public class Livro {
 	private String autor;
 	private List<Comentario> comentarios;
 	
-	//**** Getter's and setter's ****
+	//constructor
+	public Livro(String nome) {
+		this.nome = nome;
+	}
 	
+	//**** Getter's and setter's ****
 	//ID
 	public Long getId() {
 		return id;
