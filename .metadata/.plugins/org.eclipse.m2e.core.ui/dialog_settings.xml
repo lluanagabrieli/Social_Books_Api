@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/alunos/git"/>
+			<item value="/home/alunos/git/Social_Books_Api/src/main/java/br/fepi/socialbooks"/>
 			<item value="/home/alunos/git/Social_Books_Api"/>
 		</list>
 		<list key="projectNameTemplate">
