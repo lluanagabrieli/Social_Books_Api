@@ -1,15 +1,40 @@
-package br.fepi.socialbooks.domain;
+package br.fepi.socialbooks;
 
 import java.util.Date;
 import java.util.List;
 
-public class Livro {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+//import com.fasterxml.jackson.annotation.JsonInclude;
+//import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+@Entity
+public class Livro {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@JsonInclude(Include.NON_NULL)
 	private Long id;
+	
+	@JsonInclude(Include.NON_NULL)
 	private String nome;
+	
+	@JsonInclude(Include.NON_NULL)
 	private Date publicacao;
+	
+	@JsonInclude(Include.NON_NULL)
 	private String editora;
+	
+	@JsonInclude(Include.NON_NULL)
 	private String resumo;
+	
+	@JsonInclude(Include.NON_NULL)
 	private String autor;
 	private List<Comentario> comentarios;
 	

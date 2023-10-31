@@ -1,4 +1,4 @@
-package br.fepi.socialbooks.domain;
+package br.fepi.socialbooks;
 
 import java.util.Date;
 
