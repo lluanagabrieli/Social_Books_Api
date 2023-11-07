@@ -25,4 +25,15 @@ public class LivrosResources {
 		
 		return Arrays.asList(livros);
 	}
+	
+	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+	public void deletar (@PathVariable("id") Long id) {
+		livrosRepository.deleteById(id);
+	}
+	
+	@RequestMapping(value = "{id}", method = RequestMethot.PUT)
+	public void atualizar(@RequestBody Livro livro, @PathVariable("id") Long id) {
+		livro.setId(id);
+		livrosRepository.save(livro);
+	}
 }
